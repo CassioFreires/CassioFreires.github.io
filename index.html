@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto 7</title>
+</head>
+<body>
+    <div id="painel-texto">
+        <p id="texto-paragrafo" class="esconder">
+        </p>
+    </div>
+    <div class="container">
+        <form action="" class="formulario">
+            <div class="selecao">
+                <div class="title">
+                    <img src="img/numero_1.png" alt="número-1">
+                    <h3> Informações das Histórias</h3>
+                </div>
+                <div class="input-personagem">
+                    <input type="text" placeholder="Nome do Protagonista" id="protagonista">
+                </div>
+                <h4>Monstros</h4>
+                <select name="" id="select-1">
+                    <option value="#" selected>-- Seleciona o gênero da história --</option>
+                    <option value="Contos de Fadas">Contos de Fadas</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Folclore">Folclore</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Ficção Cientifica">Ficção Cientifica</option>
+                </select>
+                <h4>Espécie do protagonista</h4>
+                <select name="" id="select-2">
+                    <option value="">-- Seleciona o protagonista --</option>
+                    <option value="Zumbi">Zumbi</option>
+                    <option value="Golfinho">Golfinho</option>
+                    <option value="Fada">Fada</option>
+                    <option value="Chapélzinho">Chapélzinho</option>
+                    <option value="Vovó">Vovó</option>
+                </select>
+                <h4>Armamento</h4>
+                <select name="" id="select-3">
+                    <option value="">-- Selecione sua arma --</option>
+                    <option value="Faca">Faca</option>
+                    <option value="Bomba">Bomba</option>
+                    <option value="Pistóla">Pistóla</option>
+                    <option value="Varinha Mágica">Varinha Mágica</option>
+                    <option value="Escudo">Escudo</option>
+                    <option value="Capa Voadora">Capa Voadora</option>
+                    <option value="Martelo">Martelo</option>
+                    <option value="Espada">Espada</option>
+                    <option value="Ficar Invisível">Ficar Invisível</option>
+                    <option value="Arma de Choque">Arma de Choque</option>
+                    <option value="Roupa de Aço">Roupa de Aço</option>
+                    <option value="Super Inteligencia">Super Inteligencia</option>
+                    <option value="Teletransporte">Teletransporte</option>
+                    <option value="Óculos de raio">Óculos de raio</option>
+                    <option value="Sopro de ar Supremo">Sopro de ar Supremo</option>
+                    <option value="Mão que atira Fogo">Mão que atira Fogo</option>
+                    <option value="Quatro Braços">Quatro Braços</option>
+                    <option value="Poder de virar um rato">Poder de virar um rato</option>
+                    <option value="Voar">Voar</option>
+                </select>
+                <h4>Local da História</h4>
+                <select name="" id="select-4">
+                    <option value="">-- Selecione o local --</option>
+                    <option value="Local Próprio">Local Próprio</option>
+                    <option value="Disney World">Disney World</option>
+                    <option value="Discovery Channel">Discovery Channel</option>
+                    <option value="Nickelodeon">Nickelodeon</option>
+                    <option value="Nick Jr">Nick Jr</option>
+                    <option value="Cartoon Network">Cartoon Network</option>
+                    <option value="Cartonito">Cartonito</option>
+                    <option value="Discovery Kids">Discovery Kids</option>
+                    <option value="Gloob">Gloob</option>
+                    <option value="Gloobinho">Gloobinho</option>
+                    <option value="NatGeo Kids">NatGeo Kids</option>
+                    <option value="Tooncast">Tooncast</option>
+                    <option value="ZooMoo Kids">ZooMoo Kids</option>
+                    <option value="Baby TV">Baby TV</option>
+                    <option value="TV Rá Tim Bum">TV Rá Tim Bum</option>
+                </select>
+                <h4>Assidente Ocorrido</h4>
+                <select name="" id="select-5">
+                    <option value="">-- Selecione o acontecimento --</option>
+                    <option value="Guerra Nuclear">Guerra Nuclear</option>
+                    <option value="Invasão de Zumbis">Invasão de Zumbis</option>
+                    <option value="Alienigenas Assassinos">Alienigenas Assassinos</option>
+                    <option value="Tráfico de armas">Tráfico de armas</option>
+                    <option value="Troca de Tiro">Troca de Tiro</option>
+                    <option value="ET">ET</option>
+                    <option value="Guerra Mundial">Guerra Mundial</option>
+                    <option value="Briga de Bar">Briga de Bar</option>
+                    <option value="Máquina do Tempo">Máquina do Tempo</option>
+                    <option value="Carnificina">Carnificina </option>
+                    <option value="Tróia Matador">Tróia Matador</option>
+                    <option value="Homem Gigante Malvado">Homem Gigante Malvado</option>
+                    <option value="Caçadores de Pessoas do Bem">Caçadores de Pessoas do Bem</option>
+                    <option value="Bomba Nuclear">Bomba Nuclear</option>
+                    <option value="Sangue nas mãos">Sangue nas mãos</option>
+                    <option value="Drógas">Drógas</option>
+                    <option value="Luta de Rua">Luta de Rua</option>
+                    <option value="Guerra de Mágicos">Guerra de Mágicos</option>
+                    <option value="Feitiçaria entre Pessoas">Feitiçaria entre Pessoas</option>
+                    <option value="Animais Assassinos">Animais Assassinos</option>
+                </select>
+                <div class="btn">
+                    <button onclick="btnEnviarHistoria();">Monte sua História</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

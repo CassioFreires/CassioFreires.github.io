@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(82, 7, 63));
+}
+
+span {
+    border-radius: 30px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+h3 {
+    color: rgb(212, 211, 211);
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.selecao {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 2px 50px 10px black;
+    width: 35%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-image: linear-gradient(to bottom, rgb(67, 19, 107), black);
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.input-personagem input {
+    padding: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    width: 30px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+select,
+option {
+    box-sizing: border-box;
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: rgba(80, 196, 186, 0.952);
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.selecao .input-personagem input {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 5vh;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.selecao .btn button {
+    width: 100%;
+    height: 6vh;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+
+.selecao .btn button:hover {
+    background: rgba(14, 139, 123, 0.486);
+    color: #fff;
+}
+
+
+
+#texto-paragrafo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: wrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 10s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+.esconder{
+    display: none;
+}
+
+#texto-paragrafo{
+    display: block;
+    color: black;
+    font-size: 2rem;
+}
+#painel-texto{
+    margin: 0 auto;
+    width: 80%;
+}
